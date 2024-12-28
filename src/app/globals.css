@@ -16,8 +16,10 @@ body {
   --text: #262626;
   --softText: #3f3f3f;
   --green: #4ca422;
+  --focusGreen: #265211;
   --blue: #2a9a9e;
   --orange: #f7931e;
+  --focusOrange: #a15e11;
   --gray: #999999;
 }
 
