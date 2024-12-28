@@ -26,7 +26,7 @@
   justify-content: space-between;
 }
 
-.social {
+.socials {
   display: flex;
   gap: 0.7rem;
   flex: 1;
@@ -52,5 +52,30 @@
 @media screen and (max-width: 1280px) {
   .links {
     font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .socials {
+    display: none;
+  }
+
+  .logo {
+    align-items: center;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .link {
+    display: none;
+  }
+
+  .themeText {
+    display: none;
+  }
+
+  .links {
+    justify-content: end;
   }
 }

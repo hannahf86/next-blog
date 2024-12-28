@@ -1,0 +1,33 @@
+.h1 {
+  font-size: 5rem;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.h1Accent {
+  text-decoration: underline;
+}
+
+.h2Container {
+  display: flex;
+  position: relative;
+}
+
+.box {
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--green);
+  position: absolute;
+  z-index: 0;
+  transform: rotate(-20deg);
+  top: 2.5rem;
+}
+
+.h2 {
+  font-size: 2rem;
+  color: var(--softText);
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+  z-index: 100;
+}

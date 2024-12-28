@@ -1,3 +1,71 @@
 .link {
   cursor: pointer;
 }
+
+.burger {
+  width: 1.2rem;
+  height: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  border-radius: 0.1rem;
+  background-color: var(--green);
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  background-color: var(--bg);
+  height: calc(100vh - 100px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  padding-top: 3rem;
+  gap: 1.5rem;
+  font-size: 36px;
+  z-index: 995;
+}
+
+.mobileLink {
+  color: var(--text);
+  font-weight: 900;
+  text-align: right;
+  font-size: 4.5rem;
+}
+
+.mobileLink:focus {
+  text-decoration: underline;
+  color: var(--green);
+}
+
+.mobileLogin {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-style: dashed;
+  text-align: center;
+  max-width: 50%;
+  margin: auto;
+}
+
+/* --------------- RESPONSIVE DESIGN --------------- */
+@media screen and (max-width: 640px) {
+  .burger {
+    display: flex;
+  }
+
+  .link {
+    display: none;
+  }
+}

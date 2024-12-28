@@ -18,12 +18,12 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.themeToggle}>
-        <small>Theme Change Here </small>
+        <small className={styles.themeText}>Theme Change Here </small>
         <ThemeToggle />
       </div>
       {/* SOCIAL ICONS */}
       <div className={styles.wrapper}>
-        <div className={styles.social}>
+        <div className={styles.socials}>
           <Image
             src="/facebook.png"
             alt="link to facebook page using facebook logo"
@@ -60,10 +60,18 @@ const Navbar = () => {
         </div>
         {/* LINKS */}
         <div className={styles.links}>
-          <Link href="/">HOME</Link>
-          <Link href="/services">SERVICES</Link>
-          <Link href="/blog">BLOG</Link>
-          <Link href="/contact">CONTACT</Link>
+          <Link href="/" className={styles.link}>
+            HOME
+          </Link>
+          <Link href="/services" className={styles.link}>
+            SERVICES
+          </Link>
+          <Link href="/blog" className={styles.link}>
+            BLOG
+          </Link>
+          <Link href="/contact" className={styles.link}>
+            CONTACT
+          </Link>
           <AuthLinks />
         </div>
       </div>
