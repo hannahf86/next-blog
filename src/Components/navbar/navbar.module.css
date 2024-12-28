@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  align-content: center;
+}
+
+.themeToggle {
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-top: -0.2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  background-color: #130b13;
+  border-radius: 0.3rem;
+  color: #fff;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  display: flex;
+  gap: 0.7rem;
+  flex: 1;
+}
+
+.logo {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* --------------- RESPONSIVE DESIGN --------------- */
+@media screen and (max-width: 1280px) {
+  .links {
+    font-size: 0.9rem;
+  }
+}
