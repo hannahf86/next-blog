@@ -2,8 +2,8 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 // COMPONENTS
-import Navbar from "@/Components/navbar/Navbar";
-import Footer from "@/Components/footer/Footer";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
 // CONTEXTS
 import { ThemeContextProvider } from "@/context/ThemeContext";

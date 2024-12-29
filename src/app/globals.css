@@ -44,6 +44,15 @@ a {
   padding-right: 5rem;
 }
 
+/* --------------- QUILL --------------- */
+.ql-container {
+  font-size: 1.8rem !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+  color: var(--gray);
+}
+
 /* --------------- THEMES --------------- */
 .dark {
   --bg: #262626;
