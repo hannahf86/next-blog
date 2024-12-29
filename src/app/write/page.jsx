@@ -19,7 +19,7 @@ const WritePage = () => {
 
   return (
     <div className={styles.container}>
-      <input type="text" placeholder="Title" />
+      <input type="text" placeholder="Title" className={styles.input} />
 
       <div className={styles.editor}>
         <button>
@@ -32,6 +32,8 @@ const WritePage = () => {
             onClick={() => !open}
           />
         </button>
+
+        {/* OPEN EDITOR */}
         {open && (
           <div className={styles.add}>
             <button>
@@ -72,8 +74,10 @@ const WritePage = () => {
           value={textValue}
           onChange={setTextValue}
           placeholder="Write something good!"
+          className={styles.textArea}
         />
       </div>
+      <button className={styles.publish}>Publish</button>
     </div>
   );
 };
